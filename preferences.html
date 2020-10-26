@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <title>Preferences</title>
+  </head>
+
+  <body>
+    <nav class="pt-2 pl-2"><a href="./index.html">Go Back</a></nav>
+    <div class="container">
+        <h3>Buisness Hours</h3>
+        <label>Start: </label>
+        <input id="startTime" type="number" min=1 max=24 value=7>
+        <label>End: </label>
+        <input id="endTime" type="number" min=2 max=24 value =17>
+        <br />
+        <label>Use Military Time:</label>
+        <input id="militaryCb" type="checkbox">
+        <br />
+        <button id="saveButton">Save</button>
+    </div>
+
+    <!-- Jquery Source-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./javascript/preferences.js"></script>
+  </body>
+</html>
